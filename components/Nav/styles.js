@@ -99,8 +99,8 @@ export const MobileNav = styled.section`
     z-index: 5;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(0.125rem);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(0.25rem);
     transition: 0.3s ease-out;
     opacity: 0;
   }
