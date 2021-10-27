@@ -32,7 +32,7 @@ export const WhatWeDoRoot = styled.section`
 
     p {
       max-width: 408px;
-      width: 75%;
+      width: 80%;
       margin: 20px auto 3.5rem;
       font-size: ${fontSize("bodyM")};
       color: ${grey(700)};
