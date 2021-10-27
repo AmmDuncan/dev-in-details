@@ -1,7 +1,7 @@
 export default [
   {
     heading: "Web Design & Development",
-    body: "We design and build landing pages that use tested techniques and patterns that is effective in your industry of operations. ",
+    body: "We design and build landing pages that use tested techniques and patterns that are effective in your industry of operations. ",
   },
   {
     heading: "Social Media Marketing",
