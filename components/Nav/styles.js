@@ -112,6 +112,7 @@ export const MobileNav = styled.section`
     width: 85%;
     height: 100vh;
     max-width: 300px;
+    padding-bottom: 2rem;
     background: ${primary(50)};
     transition: 0.15s 0.05s ease-out;
     overflow-y: scroll;
