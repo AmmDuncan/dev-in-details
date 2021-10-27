@@ -55,7 +55,8 @@ export const HeroContent = styled.section`
     position: relative;
     max-width: 430px;
     font-size: ${(props) => fontSize(props).display};
-    letter-spacing: calc(1em * -0.05);
+    font-weight: 800;
+    letter-spacing: calc(1em * -0.06);
 
     &:before {
       ${absolutePosition};
@@ -84,9 +85,79 @@ export const HeroContent = styled.section`
 `;
 
 export const HeroIllustration = styled.section`
+  position: relative;
+
   svg {
     width: 100%;
     max-width: 631px;
+  }
+
+  .highlight {
+    position: absolute;
+    display: grid;
+    grid: 1fr / repeat(2, max-content);
+    column-gap: 12px;
+    align-items: center;
+    padding: 8px 24px;
+    box-shadow: 0 6px 0 rgba(30, 50, 150, 0.15);
+    border-radius: 10rem;
+    background: ${(props) => primary(props)[400]};
+    font-size: 12px;
+
+    &:first-of-type {
+      column-gap: 0;
+      bottom: 14%;
+      left: -3%;
+      padding: 16px 24px;
+
+      svg {
+        position: absolute;
+        top: -16px;
+      }
+
+      span {
+        display: inline-block;
+        margin-left: 2rem;
+      }
+    }
+
+    &:nth-last-of-type(2) {
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:last-of-type {
+      bottom: 19%;
+      right: -4%;
+    }
+
+    ${(props) => media(props).below("mobL")} {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1008px) {
+    .highlight {
+      &,
+      &:first-of-type {
+        //right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+      }
+
+      &:first-of-type {
+        bottom: 20%;
+      }
+
+      &:nth-last-of-type(2) {
+        bottom: calc(20% - 64px);
+      }
+
+      &:nth-last-of-type(3) {
+        bottom: calc(20% - 128px);
+      }
+    }
   }
 `;
 

@@ -1,14 +1,12 @@
 import React from "react";
-import {
-  CallToActions,
-  HeroContent,
-  HeroIllustration,
-  HeroRoot,
-} from "./styles";
+import { CallToActions, HeroContent, HeroIllustration, HeroRoot } from "./styles";
 import SetupAnalyticsIllus from "../../assets/SetupAnalyticsIllus";
 import { Container } from "../../styles/globalStyle";
 import { Button, ButtonOutlined } from "../Button/Button";
 import { above } from "../../theme/ThemeProvider";
+import Rocket from "../../assets/Rocket";
+import GoogleG from "../../assets/GoogleG";
+import MoneyBag from "../../assets/MoneyBag";
 
 const Hero = () => {
   console.log(above("mobM"));
@@ -25,8 +23,20 @@ const Hero = () => {
             <ButtonOutlined>View our process</ButtonOutlined>
           </CallToActions>
         </HeroContent>
+
         <HeroIllustration>
           <SetupAnalyticsIllus />
+          <section className="highlights">
+            <article className="highlight">
+              <Rocket /> <span>Boost Conversion Rates</span>
+            </article>
+            <article className="highlight">
+              <GoogleG /> <span>Rank higher on search engines</span>
+            </article>
+            <article className="highlight">
+              <MoneyBag /> <span>Attract actual paying clients</span>
+            </article>
+          </section>
         </HeroIllustration>
       </Container>
     </HeroRoot>
