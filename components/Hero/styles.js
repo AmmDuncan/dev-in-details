@@ -92,10 +92,9 @@ export const HeroIllustration = styled.section`
   position: relative;
   margin-bottom: 4rem;
   height: max-content;
-  display: flex;
-  justify-content: center;
 
   svg {
+    display: block;
     width: 100%;
     max-width: 631px;
     margin: auto;
