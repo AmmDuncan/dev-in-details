@@ -166,15 +166,15 @@ export const HeroIllustration = styled.section`
       }
 
       &:first-of-type {
-        bottom: 20%;
+        bottom: 30%;
       }
 
       &:nth-last-of-type(2) {
-        bottom: calc(20% - 64px);
+        bottom: calc(30% - 56px);
       }
 
       &:nth-last-of-type(3) {
-        bottom: calc(20% - 128px);
+        bottom: calc(30% - 112px);
       }
     }
   }
