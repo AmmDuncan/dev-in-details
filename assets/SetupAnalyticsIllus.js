@@ -1,10 +1,11 @@
-import * as React from "react"
+import * as React from "react";
 
 function SvgComponent(props) {
   return (
     <svg
-      width={631}
-      height={631}
+      // width={631}
+      // height={631}
+      viewBox="0 0 631 631"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
@@ -422,7 +423,7 @@ function SvgComponent(props) {
         fill="#455A64"
       />
     </svg>
-  )
+  );
 }
 
-export default SvgComponent
+export default SvgComponent;
