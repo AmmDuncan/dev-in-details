@@ -46,7 +46,7 @@ export const CardContainer = styled.section`
   grid: auto-flow 1fr / auto;
   justify-content: center;
   justify-items: center;
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 
   ${media("above", "tabM")} {
     grid: auto-flow 1fr / repeat(2, 1fr);
@@ -79,7 +79,7 @@ export const CardRoot = styled.article`
     min-height: 10rem;
     display: grid;
     justify-content: center;
-    padding: 40px 2.5rem 0;
+    padding: 44px 2.5rem 0;
     font-size: 1.5rem;
     letter-spacing: calc(1em * -0.04);
     color: #fff;
