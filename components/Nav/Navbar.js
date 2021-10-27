@@ -4,7 +4,7 @@ import Logo from "../../assets/Logo";
 import NavList from "./NavList";
 import NavOpener from "./NavOpener";
 import { Container } from "../../styles/common";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const NavBrand = ({ children }) => (
   <Link href="/">
@@ -17,6 +17,11 @@ export const NavBrand = ({ children }) => (
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) document.body.style.overflowY = "hidden";
+    else document.body.style.overflowY = "scroll";
+  }, [open]);
 
   return (
     <NavbarRoot>

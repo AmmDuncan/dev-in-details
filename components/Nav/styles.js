@@ -108,7 +108,7 @@ export const MobileNav = styled.section`
   nav {
     position: absolute;
     z-index: 50;
-    right: -100%;
+    right: -300px;
     width: 85%;
     height: 100%;
     max-width: 300px;
@@ -125,6 +125,7 @@ export const MobileNav = styled.section`
     right: 0;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
   }
 
   li {
