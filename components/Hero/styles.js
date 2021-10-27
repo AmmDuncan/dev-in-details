@@ -49,7 +49,7 @@ export const HeroRoot = styled.section`
   
   ${media("above", "deskS")} {
     min-height: 36rem;
-    padding-top: 120px;
+    padding-top: 144px;
     padding-bottom: 8%;
 `;
 
