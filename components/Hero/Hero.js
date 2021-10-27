@@ -1,7 +1,7 @@
 import React from "react";
 import { CallToActions, HeroContent, HeroIllustration, HeroRoot } from "./styles";
 import SetupAnalyticsIllus from "../../assets/SetupAnalyticsIllus";
-import { Container } from "../../styles/globalStyle";
+import { Container } from "../../styles/common";
 import { Button, ButtonOutlined } from "../Button/Button";
 import Rocket from "../../assets/Rocket";
 import GoogleG from "../../assets/GoogleG";

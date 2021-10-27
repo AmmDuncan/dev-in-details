@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { absolutePosition } from "../../styles/mixins";
 import { fontSize, media, primary } from "../../styles/utils";
-import { Container } from "../../styles/globalStyle";
+import { Container } from "../../styles/common";
 
 export const HeroRoot = styled.section`
   position: relative;
@@ -13,7 +13,7 @@ export const HeroRoot = styled.section`
   .bg {
     ${absolutePosition};
     z-index: -1;
-    background: ${(props) => primary(props).main};
+    background: ${primary("main")};
     opacity: 0.8;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
   }
@@ -21,7 +21,7 @@ export const HeroRoot = styled.section`
   &:before {
     ${absolutePosition};
     z-index: -1;
-    background: ${(props) => primary(props).main};
+    background: ${primary("main")};
     opacity: 0.8;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 96%);
   }
@@ -29,12 +29,12 @@ export const HeroRoot = styled.section`
   &:after {
     ${absolutePosition};
     z-index: -1;
-    background: ${(props) => primary(props).main};
+    background: ${primary("main")};
     opacity: 0.8;
     clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 0% 90%);
   }
 
-  ${(props) => media(props).above("tabM")} {
+  ${media("above", "tabM")} {
     min-height: 48rem;
     padding-bottom: 10%;
     display: grid;
@@ -54,7 +54,7 @@ export const HeroContent = styled.section`
   h1 {
     position: relative;
     max-width: 430px;
-    font-size: calc(${(props) => fontSize(props).heading2} + 8px);
+    font-size: calc(${fontSize("heading2")} + 8px);
     font-weight: 800;
     letter-spacing: calc(1em * -0.06);
 
@@ -70,20 +70,20 @@ export const HeroContent = styled.section`
   p {
     max-width: 315px;
     padding: 1rem 0 2.5rem;
-    font-size: ${(props) => fontSize(props).bodyL};
+    font-size: ${fontSize("bodyL")};
     line-height: 1.6;
-    color: ${(props) => primary(props)[100]};
+    color: ${primary(100)};
   }
 
-  ${(props) => media(props).above("mobL")} {
+  ${media("above", "mobL")} {
     padding-bottom: 5rem;
 
     h1 {
-      font-size: ${(props) => fontSize(props).display};
+      font-size: ${fontSize("display")};
     }
   }
 
-  ${(props) => media(props).above("tabM")} {
+  ${media("above", "tabM")} {
     padding: 4rem 0;
   }
 `;
@@ -109,7 +109,7 @@ export const HeroIllustration = styled.section`
     padding: 16px 24px;
     box-shadow: 0 6px 0 rgba(30, 50, 150, 0.15);
     border-radius: 10rem;
-    background: ${(props) => primary(props)[400]};
+    background: ${primary(400)};
     font-size: 12px;
     width: max-content;
 
@@ -152,7 +152,7 @@ export const HeroIllustration = styled.section`
       right: -4%;
     }
 
-    ${(props) => media(props).below("mobL")} {
+    ${media("below", "mobL")} {
       display: none;
     }
   }
@@ -167,7 +167,7 @@ export const HeroIllustration = styled.section`
         padding: 12px 24px;
         left: 50%;
         transform: translateX(-50%);
-        background: ${(props) => primary(props)[400]}ea;
+        background: ${primary(400)}ea;
         font-size: 11px;
       }
 
@@ -191,7 +191,7 @@ export const CallToActions = styled.section`
   grid: 1fr 1fr / 1fr;
   gap: 1rem;
 
-  ${(props) => media(props).above("mobL")} {
+  ${media("above", "mobL")} {
     grid: 1fr / repeat(2, max-content);
   }
 `;

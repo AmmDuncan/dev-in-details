@@ -1,5 +1,7 @@
-export const primary = (props) => props.theme.palette.primary;
+export const primary = (value) => (props) => {
+  return props.theme?.palette.primary[value];
+};
 
-export const fontSize = (props) => props.theme.typography.fontSizes;
+export const fontSize = (value) => (props) => props.theme.typography.fontSizes[value];
 
-export const media = (props) => props.theme.media;
+export const media = (direction, value) => (props) => props.theme.media[direction](value);
