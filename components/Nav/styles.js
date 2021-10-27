@@ -153,6 +153,10 @@ export const MobileNav = styled.section`
       opacity: 1;
     }
   }
+
+  ${media("above", "tabL")} {
+    display: none;
+  }
 `;
 
 export const NavOpenerRoot = styled.article`
