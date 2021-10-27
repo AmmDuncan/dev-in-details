@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   html, body {
@@ -19,5 +19,13 @@ export default createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-`
+`;
+
+export const Container = styled.section`
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+`;
