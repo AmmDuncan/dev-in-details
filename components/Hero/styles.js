@@ -91,7 +91,7 @@ export const HeroContent = styled.section`
 export const HeroIllustration = styled.section`
   position: relative;
   margin-bottom: 4rem;
-  min-height: 25rem;
+  min-height: 40rem;
   display: flex;
   justify-content: center;
 
@@ -156,6 +156,10 @@ export const HeroIllustration = styled.section`
     ${media("below", "mobL")} {
       display: none;
     }
+  }
+
+  ${media("above", "tabM")} {
+    min-height: 20rem;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1008px) {
