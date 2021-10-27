@@ -4,7 +4,7 @@ import { primary } from "../../styles/utils";
 export const Button = styled.a`
   display: flex;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 20px 32px;
   border: 2px solid #fff;
   border-radius: 8px;
   transition: 0.15s ease-out;
