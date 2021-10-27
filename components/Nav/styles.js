@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { fontSize, media } from "../../styles/utils";
 import { Container } from "../../styles/globalStyle";
+import { absolutePosition } from "../../styles/mixins";
 
 export const NavbarRoot = styled.nav`
   position: absolute;
@@ -8,6 +9,7 @@ export const NavbarRoot = styled.nav`
   left: 0;
   height: 72px;
   width: 100%;
+  z-index: 10;
   display: flex;
   align-items: center;
 
@@ -36,6 +38,30 @@ export const NavbarRoot = styled.nav`
       display: grid;
       grid: 1fr / auto-flow max-content;
       column-gap: 2rem;
+      align-items: stretch;
+    }
+
+    li {
+      position: relative;
+      transition: 0.1s ease-out;
+
+      &:after {
+        ${absolutePosition};
+        top: auto;
+        bottom: -0.75rem;
+        transition: 0.15s ease-out;
+        width: 0;
+        height: 3px;
+        background: #fff;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        &:after {
+          width: 70%;
+        }
+      }
     }
 
     ${(props) => media(props).above("tabL")} {
