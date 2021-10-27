@@ -125,8 +125,7 @@ export const MobileNav = styled.section`
     list-style: none;
     right: 0;
     width: 100%;
-    height: 100%;
-    margin: 1rem 0 3rem;
+    padding: 1rem 0 2rem;
   }
 
   li {
