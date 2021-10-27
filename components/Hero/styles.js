@@ -167,7 +167,7 @@ export const HeroIllustration = styled.section`
         padding: 12px 24px;
         left: 50%;
         transform: translateX(-50%);
-        background: ${(props) => primary(props)[400]}d6;
+        background: ${(props) => primary(props)[400]}ea;
         font-size: 11px;
       }
 
