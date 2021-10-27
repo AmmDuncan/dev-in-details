@@ -1,10 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import { grey } from "./utils";
 
 export default createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+  
   html, body {
     padding: 0;
     margin: 0;
     font-family: "Inter", "Segoe UI", Helvetica, sans-serif;
+    color: ${grey(900)};
   }
   
   body {

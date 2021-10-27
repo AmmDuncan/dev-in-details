@@ -19,7 +19,7 @@ const NavList = (props) => {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="#what-we-do">
               <a>Services</a>
             </Link>
           </li>
