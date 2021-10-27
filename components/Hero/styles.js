@@ -49,7 +49,7 @@ export const HeroRoot = styled.section`
 `;
 
 export const HeroContent = styled.section`
-  padding: 10rem 0 2rem;
+  padding: 7rem 0 3.5rem;
 
   h1 {
     position: relative;
@@ -86,6 +86,7 @@ export const HeroContent = styled.section`
 
 export const HeroIllustration = styled.section`
   position: relative;
+  margin-bottom: 4rem;
 
   svg {
     width: 100%;
@@ -122,7 +123,7 @@ export const HeroIllustration = styled.section`
     }
 
     &:nth-last-of-type(2) {
-      bottom: 0%;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -136,7 +137,10 @@ export const HeroIllustration = styled.section`
       display: none;
     }
   }
+
   @media screen and (min-width: 768px) and (max-width: 1008px) {
+    margin-bottom: 0;
+
     .highlight {
       &,
       &:first-of-type {
