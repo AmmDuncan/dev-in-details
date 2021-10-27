@@ -32,7 +32,8 @@ export const WhatWeDoRoot = styled.section`
 
     p {
       max-width: 408px;
-      margin: 2rem auto 3.875rem;
+      width: 75%;
+      margin: 20px auto 3.5rem;
       font-size: ${fontSize("bodyM")};
       color: ${grey(700)};
       line-height: 1.5;
@@ -117,6 +118,8 @@ export const CardRoot = styled.article`
     padding-right: 2.5rem;
     box-sizing: content-box;
     line-height: 1.6;
+    color: ${grey(700)};
+    opacity: 0.85;
   }
 
   ${media("above", "deskS")} {
