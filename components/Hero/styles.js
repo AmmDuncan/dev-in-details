@@ -103,17 +103,21 @@ export const HeroIllustration = styled.section`
     grid: 1fr / max-content min-content;
     column-gap: 12px;
     align-items: center;
-    padding: 8px 24px;
+    padding: 16px 24px;
     box-shadow: 0 6px 0 rgba(30, 50, 150, 0.15);
     border-radius: 10rem;
     background: ${(props) => primary(props)[400]};
     font-size: 12px;
     width: max-content;
 
+    svg {
+      position: absolute;
+      left: 16px;
+    }
+
     span {
-      white-space: nowrap;
       display: inline-block;
-      width: max-content;
+      margin-left: 2rem;
     }
 
     &:first-of-type {
@@ -125,6 +129,7 @@ export const HeroIllustration = styled.section`
       svg {
         position: absolute;
         top: -16px;
+        left: 0;
       }
 
       span {
