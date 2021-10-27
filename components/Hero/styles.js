@@ -42,14 +42,14 @@ export const HeroRoot = styled.section`
 
     ${Container} {
       display: grid;
-      grid: 1fr / 1fr 1fr;
+      grid: 1fr / 3fr 4.5fr;
       align-items: center;
     }
   }
 
   ${media("above", "deskS")} {
     min-height: 36rem;
-    padding-top: 112px;
+    padding-top: 64px;
     padding-bottom: 12%;
   }
 
@@ -114,7 +114,7 @@ export const HeroIllustration = styled.section`
   svg {
     display: block;
     width: 100%;
-    max-width: 631px;
+    max-width: 740px;
     margin: auto;
   }
 
@@ -143,7 +143,7 @@ export const HeroIllustration = styled.section`
 
     &:first-of-type {
       column-gap: 0;
-      bottom: 14%;
+      bottom: 16%;
       left: -3%;
       padding: 16px 24px;
 
@@ -160,14 +160,14 @@ export const HeroIllustration = styled.section`
     }
 
     &:nth-last-of-type(2) {
-      bottom: 0;
+      bottom: 4%;
       left: 50%;
       transform: translateX(-50%);
     }
 
     &:last-of-type {
-      bottom: 19%;
-      right: -4%;
+      bottom: 22%;
+      right: -5%;
     }
 
     ${media("below", "mobL")} {

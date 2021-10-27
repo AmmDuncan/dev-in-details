@@ -75,9 +75,12 @@ export const CardRoot = styled.article`
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 16px 44px rgba(6, 11, 41, 0.06);
+  transition: 0.15s ease-out;
+  background: #fff;
 
   header {
     position: relative;
+    z-index: 1;
     min-height: 10rem;
     display: grid;
     justify-content: center;
@@ -94,6 +97,7 @@ export const CardRoot = styled.article`
       background: ${primary("main")};
       opacity: 0.6;
       clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 56.72% 100%, 0% 75%);
+      transition: 0.15s ease-out;
     }
 
     &:before {
@@ -102,6 +106,7 @@ export const CardRoot = styled.article`
       background: ${primary("main")};
       opacity: 0.6;
       clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 76.88% 100%, 0% 75%);
+      transition: 0.15s ease-out;
     }
 
     &:after {
@@ -110,6 +115,7 @@ export const CardRoot = styled.article`
       background: ${primary("main")};
       opacity: 0.6;
       clip-path: polygon(0% 0%, 100% 0%, 100% 91.25%, 0% 75%);
+      transition: 0.15s ease-out;
     }
   }
 
@@ -122,6 +128,10 @@ export const CardRoot = styled.article`
     line-height: 1.6;
     color: ${grey(700)};
     opacity: 0.85;
+  }
+
+  &:hover {
+    transform: scale(1.025);
   }
 
   ${media("above", "deskS")} {
