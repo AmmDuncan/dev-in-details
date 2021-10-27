@@ -110,7 +110,7 @@ export const MobileNav = styled.section`
     z-index: 50;
     right: -300px;
     width: 85%;
-    height: 100%;
+    height: 100vh;
     max-width: 300px;
     background: ${primary(50)};
     transition: 0.15s 0.05s ease-out;

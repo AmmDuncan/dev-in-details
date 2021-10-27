@@ -91,7 +91,7 @@ export const HeroContent = styled.section`
 export const HeroIllustration = styled.section`
   position: relative;
   margin-bottom: 4rem;
-  min-height: 40rem;
+  height: max-content;
   display: flex;
   justify-content: center;
 
