@@ -58,7 +58,7 @@ export const NavbarRoot = styled.nav`
         }
 
         &:hover {
-          transform: scale(1.05);
+          //transform: scale(1.05);
 
           &:after {
             width: 70%;
