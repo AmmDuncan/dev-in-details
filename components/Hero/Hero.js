@@ -3,7 +3,6 @@ import { CallToActions, HeroContent, HeroIllustration, HeroRoot } from "./styles
 import SetupAnalyticsIllus from "../../assets/SetupAnalyticsIllus";
 import { Container } from "../../styles/globalStyle";
 import { Button, ButtonOutlined } from "../Button/Button";
-import { above } from "../../theme/ThemeProvider";
 import Rocket from "../../assets/Rocket";
 import GoogleG from "../../assets/GoogleG";
 import MoneyBag from "../../assets/MoneyBag";

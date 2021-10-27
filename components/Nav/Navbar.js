@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import { NavbarRoot } from "./styles";
 import { Container } from "../../styles/globalStyle";
 import Logo from "../../assets/Logo";
