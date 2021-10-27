@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 
 export const variants = {
   initialScale: {
-    scale: 1.04,
+    scale: 1.07,
   },
   initialY: {
     y: -4,
   },
 
   upDown: {
-    y: 12,
-    transition: { duration: 4, repeat: Infinity, repeatType: "mirror" },
+    y: 8,
+    transition: { duration: 2, repeat: Infinity, repeatType: "mirror" },
   },
 
   breathe: {
