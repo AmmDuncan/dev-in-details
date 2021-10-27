@@ -42,6 +42,7 @@ export const WhatWeDoRoot = styled.section`
 `;
 
 export const CardContainer = styled.section`
+  width: 100%;
   display: grid;
   grid: auto-flow 1fr / auto;
   justify-content: center;
@@ -69,10 +70,11 @@ export const CardContainer = styled.section`
 `;
 
 export const CardRoot = styled.article`
+  width: 100%;
+  max-width: 384px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 16px 44px rgba(6, 11, 41, 0.06);
-  max-width: 384px;
 
   header {
     position: relative;
@@ -113,7 +115,7 @@ export const CardRoot = styled.article`
 
   p {
     max-width: 288px;
-    margin: 48px auto 72px;
+    margin: 36px auto 72px;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     box-sizing: content-box;
