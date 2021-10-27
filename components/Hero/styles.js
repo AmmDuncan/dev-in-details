@@ -91,10 +91,13 @@ export const HeroContent = styled.section`
 export const HeroIllustration = styled.section`
   position: relative;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
 
   svg {
     width: 100%;
     max-width: 631px;
+    margin: auto;
   }
 
   .highlight {
@@ -161,20 +164,23 @@ export const HeroIllustration = styled.section`
       &,
       &:first-of-type {
         //right: 0;
+        padding: 12px 24px;
         left: 50%;
         transform: translateX(-50%);
+        background: ${(props) => primary(props)[400]}d6;
+        font-size: 11px;
       }
 
       &:first-of-type {
-        bottom: 30%;
+        bottom: 0.5rem;
       }
 
       &:nth-last-of-type(2) {
-        bottom: calc(30% - 56px);
+        bottom: 3.5rem;
       }
 
-      &:nth-last-of-type(3) {
-        bottom: calc(30% - 112px);
+      &:last-of-type {
+        bottom: 6.5rem;
       }
     }
   }
