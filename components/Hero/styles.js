@@ -54,7 +54,7 @@ export const HeroContent = styled.section`
   h1 {
     position: relative;
     max-width: 430px;
-    font-size: ${(props) => fontSize(props).display};
+    font-size: calc(${(props) => fontSize(props).heading2} + 8px);
     font-weight: 800;
     letter-spacing: calc(1em * -0.06);
 
@@ -77,6 +77,10 @@ export const HeroContent = styled.section`
 
   ${(props) => media(props).above("mobL")} {
     padding-bottom: 5rem;
+
+    h1 {
+      font-size: ${(props) => fontSize(props).display};
+    }
   }
 
   ${(props) => media(props).above("tabM")} {
