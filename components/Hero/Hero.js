@@ -9,8 +9,6 @@ import GoogleG from "../../assets/GoogleG";
 import MoneyBag from "../../assets/MoneyBag";
 
 const Hero = () => {
-  console.log(above("mobM"));
-
   return (
     <HeroRoot>
       <div className="bg" aria-hidden="true" />
