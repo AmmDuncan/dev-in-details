@@ -108,6 +108,11 @@ export const HeroIllustration = styled.section`
     border-radius: 10rem;
     background: ${(props) => primary(props)[400]};
     font-size: 12px;
+    width: max-content;
+
+    span {
+      white-space: nowrap;
+    }
 
     &:first-of-type {
       column-gap: 0;
@@ -151,7 +156,6 @@ export const HeroIllustration = styled.section`
         //right: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: max-content;
       }
 
       &:first-of-type {

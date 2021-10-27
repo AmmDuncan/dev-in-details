@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { fontSize } from "../../styles/utils";
+import { fontSize, media } from "../../styles/utils";
+import { Container } from "../../styles/globalStyle";
 
 export const NavbarRoot = styled.nav`
   position: absolute;
@@ -10,6 +11,12 @@ export const NavbarRoot = styled.nav`
   display: flex;
   align-items: center;
 
+  ${Container} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .navbar-brand {
     display: grid;
     grid: 1fr / repeat(2, max-content);
@@ -18,5 +25,21 @@ export const NavbarRoot = styled.nav`
     font-size: ${(props) => fontSize(props)["bodyL"]};
     font-weight: 500;
     color: #fff;
+  }
+
+  nav {
+    display: none;
+
+    ul {
+      list-style: none;
+      color: #fff;
+      display: grid;
+      grid: 1fr / auto-flow max-content;
+      column-gap: 2rem;
+    }
+
+    ${(props) => media(props).above("tabL")} {
+      display: block;
+    }
   }
 `;
