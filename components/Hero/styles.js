@@ -6,7 +6,7 @@ import { Container } from "../../styles/globalStyle";
 export const HeroRoot = styled.section`
   position: relative;
   min-height: 55rem;
-  padding-top: 72px;
+  padding-top: 88px;
   padding-bottom: 25%;
   color: white;
 
@@ -84,7 +84,7 @@ export const HeroContent = styled.section`
   }
 
   ${(props) => media(props).above("tabM")} {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 `;
 
@@ -100,7 +100,7 @@ export const HeroIllustration = styled.section`
   .highlight {
     position: absolute;
     display: grid;
-    grid: 1fr / repeat(2, max-content);
+    grid: 1fr / max-content min-content;
     column-gap: 12px;
     align-items: center;
     padding: 8px 24px;
@@ -112,6 +112,8 @@ export const HeroIllustration = styled.section`
 
     span {
       white-space: nowrap;
+      display: inline-block;
+      width: max-content;
     }
 
     &:first-of-type {
