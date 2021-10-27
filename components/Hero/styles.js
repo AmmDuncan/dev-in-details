@@ -88,8 +88,14 @@ export const HeroContent = styled.section`
     }
   }
 
+  ${media("above", "mobL")} {
+    max-width: 430px;
+    margin: auto;
+  }
+
   ${media("above", "tabM")} {
     padding: 4rem 0;
+    margin: 0;
   }
 `;
 
@@ -162,12 +168,19 @@ export const HeroIllustration = styled.section`
     }
   }
 
+  ${media("above", "mobL")} {
+    max-width: 460px;
+    margin: auto;
+  }
+
   ${media("above", "tabM")} {
     min-height: 20rem;
+    max-width: 100%;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1008px) {
-    margin-bottom: 0;
+    //margin-bottom: 0;
 
     .highlight {
       &,
