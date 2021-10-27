@@ -46,6 +46,11 @@ export const HeroRoot = styled.section`
       align-items: center;
     }
   }
+  
+  ${media("above", "deskS")} {
+    min-height: 36rem;
+    padding-top: 120px;
+    padding-bottom: 8%;
 `;
 
 export const HeroContent = styled.section`
