@@ -10,7 +10,7 @@ export const WhatWeDoRoot = styled.section`
 
     h2 {
       position: relative;
-      font-size: ${fontSize("heading1")};
+      font-size: ${fontSize("heading2")};
       font-weight: 700;
       line-height: 1;
       letter-spacing: calc(1em * -0.05);
@@ -23,6 +23,10 @@ export const WhatWeDoRoot = styled.section`
         top: -1.5rem;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      ${media("above", "mobL")} {
+        font-size: ${fontSize("heading1")};
       }
     }
 
@@ -66,7 +70,7 @@ export const CardContainer = styled.section`
 export const CardRoot = styled.article`
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 16px 38px rgba(6, 11, 41, 0.05);
+  box-shadow: 0 16px 44px rgba(6, 11, 41, 0.06);
   max-width: 384px;
 
   header {
