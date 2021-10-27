@@ -33,7 +33,7 @@ export const WhatWeDoRoot = styled.section`
     p {
       max-width: 408px;
       width: 80%;
-      margin: 20px auto 3.5rem;
+      margin: 20px auto 3rem;
       font-size: ${fontSize("bodyM")};
       color: ${grey(700)};
       line-height: 1.5;
