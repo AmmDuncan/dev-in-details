@@ -143,7 +143,7 @@ export const HeroIllustration = styled.section`
 
     &:first-of-type {
       column-gap: 0;
-      bottom: 16%;
+      bottom: 17%;
       left: -3%;
       padding: 16px 24px;
 
