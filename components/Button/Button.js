@@ -11,7 +11,7 @@ export const Button = styled.a`
   background: #fff;
   font-weight: 500;
   cursor: pointer;
-  color: ${primary(600)};
+  color: ${primary(500)};
 
   &:hover {
     transform: scale(1.02) translateY(-2px);

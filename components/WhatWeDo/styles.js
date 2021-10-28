@@ -19,7 +19,7 @@ export const WhatWeDoRoot = styled.section`
         ${absolutePosition};
         height: 8px;
         width: 56px;
-        background: ${grey(800)};
+        background: ${grey(900)};
         top: -1.5rem;
         left: 50%;
         transform: translateX(-50%);
@@ -131,7 +131,7 @@ export const CardRoot = styled.article`
   }
 
   &:hover {
-    transform: scale(1.025);
+    transform: scale(1.02);
   }
 
   ${media("above", "deskS")} {
