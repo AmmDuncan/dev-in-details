@@ -44,8 +44,9 @@ export const NavbarRoot = styled.nav`
         position: relative;
         display: grid;
         place-content: center;
-        transition: 0.1s ease-out;
         cursor: pointer;
+        opacity: 0.8;
+        transition: 0.15s ease-out;
 
         &:after {
           ${absolutePosition};
@@ -59,6 +60,7 @@ export const NavbarRoot = styled.nav`
 
         &:hover {
           //transform: scale(1.05);
+          opacity: 1;
 
           &:after {
             width: 70%;
