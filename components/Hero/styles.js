@@ -186,7 +186,7 @@ export const HeroIllustration = styled.section`
     width: 100%;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1008px) {
+  @media screen and (min-width: 768px) and (max-width: 1098px) {
     //margin-bottom: 0;
 
     .highlight {
