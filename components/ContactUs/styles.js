@@ -98,11 +98,15 @@ export const ContactUsRoot = styled.section`
       align-items: start;
     }
 
+    label {
+      padding-left: 8px;
+    }
+
     input,
     textarea {
       padding: 16px 8px;
       border: none;
-      box-shadow: 0 4px 4px rgba(30, 50, 150, 0.05);
+      box-shadow: 0 4px 8px rgba(30, 50, 150, 0.1);
       width: 100%;
       margin-top: 4px;
       font-size: 100%;
