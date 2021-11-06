@@ -21,7 +21,9 @@ const OurClients = () => {
           </div>
           <div className="profile">
             <div className="container">
-              <div className="image"></div>
+              <div className="image">
+                <span />
+              </div>
               <div className="text">
                 <p className="name">Gertrude</p>
                 <p className="org">AbosseyOkai Spares</p>
