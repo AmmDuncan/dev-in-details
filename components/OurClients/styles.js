@@ -22,7 +22,7 @@ export const Testimonial = styled.article`
       &::before {
         ${absolutePosition};
         content: "“";
-        top: -152px;
+        top: -160px;
         left: -8px;
         font-size: 200px;
         font-family: "overpass", sans-serif;
