@@ -53,7 +53,7 @@ export const ContactUsRoot = styled.section`
     z-index: -1;
     background: ${primary(50)};
     opacity: 0.9;
-    clip-path: polygon(0% 163px, 14.45% 4%, 100% 163px, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 12%, 14.45% 4%, 100% 12%, 100% 100%, 0% 100%);
   }
 
   &:after {
@@ -61,7 +61,7 @@ export const ContactUsRoot = styled.section`
     z-index: -1;
     background: ${primary(50)};
     opacity: 0.9;
-    clip-path: polygon(0% 163px, 36.66% 0%, 100% 163px, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 12%, 36.66% 2%, 100% 12%, 100% 100%, 0% 100%);
   }
 
   .illustration {

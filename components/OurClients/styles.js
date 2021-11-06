@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fontSize, grey, media, primary } from "../../styles/utils";
+import { fontSize, media, primary } from "../../styles/utils";
 import { absolutePosition } from "../../styles/mixins";
 
 export const Testimonial = styled.article`
@@ -113,7 +113,7 @@ export const OurClientsRoot = styled.section`
     z-index: -1;
     background: ${primary("main")};
     opacity: 0.8;
-    clip-path: polygon(0% 24%, 15.42% 8%, 100% 24%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 18%, 15.42% 8%, 100% 18%, 100% 100%, 0% 100%);
   }
 
   &:before {
@@ -121,7 +121,7 @@ export const OurClientsRoot = styled.section`
     z-index: -1;
     background: ${primary("main")};
     opacity: 0.8;
-    clip-path: polygon(0% 24%, 75% 9.3%, 100% 24%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 18%, 75% 9.3%, 100% 18%, 100% 100%, 0% 100%);
   }
 
   &:after {
@@ -129,7 +129,7 @@ export const OurClientsRoot = styled.section`
     z-index: -1;
     background: ${primary("main")};
     opacity: 0.8;
-    clip-path: polygon(0% 24%, 93.6% 13.8%, 100% 24%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 18%, 93.6% 13.8%, 100% 18%, 100% 100%, 0% 100%);
   }
 
   ${media("above", "tabL")} {
@@ -145,7 +145,7 @@ export const OurClientsRoot = styled.section`
     }
 
     .bg {
-      clip-path: polygon(0% 24%, 15.42% 0%, 100% 24%, 100% 100%, 0% 100%);
+      clip-path: polygon(0% 18%, 15.42% 0%, 100% 18%, 100% 100%, 0% 100%);
     }
   }
 `;
