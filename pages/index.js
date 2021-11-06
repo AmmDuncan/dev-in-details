@@ -3,6 +3,7 @@ import Head from "next/head";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Nav/Navbar";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
+import OurProcess from "../components/OurProcess/OurProcess";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
 
       <main>
         <WhatWeDo />
+        <OurProcess />
       </main>
     </>
   );

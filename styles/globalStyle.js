@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { grey } from "./utils";
+import { fontSize, grey } from "./utils";
 
 export default createGlobalStyle`
   html {
@@ -20,6 +20,13 @@ export default createGlobalStyle`
   h1, h2, h3, h4 {
     font-family: "Overpass", "Segoe UI", Helvetica, sans-serif;
     line-height: 1;
+    letter-spacing: calc(1em * -0.04);
+  }
+  
+  h3 {
+    font-size: ${fontSize("heading3")};
+    font-size: min(${fontSize("heading3")}, max(6vw, 24px));
+    line-height: 1.2;
   }
 
   a {

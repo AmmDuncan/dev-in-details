@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Requirements Gathering",
+    "body": "Initial meeting with client to discuss and agree on projects’ goal. This is where we document project requirements."
+  },
+  {
+    "title": "Strategy and Research",
+    "body": "If a client doesn’t have a strategy or a plan to achieve project goals, we help the client decide by performing industry and competitor research."
+  },
+  {
+    "title": "Content Development",
+    "body":  "We use the findings from the strategy and research stage to develop a content plan and structure that will help clients achieve their goal."
+  },
+  {
+    "title": "Website Development",
+    "body": "We begin the design process which starts from making wireframes to designing high-fidelity designs. We start development after agreeing on a design."
+  },
+  {
+    "title": "Launch & Support",
+    "body": "If the client is satisfied with the output and functionality, we launch the site and start preparing for post-launch support. (Includes improving SEO)"
+  }
+]
