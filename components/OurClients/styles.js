@@ -121,7 +121,7 @@ export const OurClientsRoot = styled.section`
     z-index: -1;
     background: ${primary("main")};
     opacity: 0.8;
-    clip-path: polygon(0% 18%, 75% 9.3%, 100% 18%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 18%, 75% 11%, 100% 18%, 100% 100%, 0% 100%);
   }
 
   &:after {
