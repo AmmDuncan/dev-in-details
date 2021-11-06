@@ -18,7 +18,7 @@ const OurProcess = () => {
         </header>
         <Steps>
           {cardData.map((data) => (
-            <div className="step">
+            <div className="step" key={data.title}>
               <Bullet />
               <LineLink />
               <Card title={data.title} body={data.body} />
