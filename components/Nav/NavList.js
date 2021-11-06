@@ -24,7 +24,7 @@ const NavList = (props) => {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="#our-process">
               <a>Our process</a>
             </Link>
           </li>

@@ -7,7 +7,7 @@ import cardData from "./data.json";
 
 const OurProcess = () => {
   return (
-    <OurProcessRoot>
+    <OurProcessRoot id="our-process">
       <Container>
         <header>
           <h2>Our Process</h2>
