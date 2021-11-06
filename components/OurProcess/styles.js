@@ -80,6 +80,23 @@ export const CardRoot = styled.article`
 
   p {
     margin: 8px 0;
+    font-size: ${fontSize("body")};
+  }
+
+  h3 {
+    position: relative;
+    &.optional {
+      :before {
+        ${absolutePosition};
+        content: "(optional)";
+        left: 0;
+        top: -14px;
+        letter-spacing: 0;
+        font-size: ${fontSize("bodyS")};
+        color: ${grey(400)};
+        font-weight: 400;
+      }
+    }
   }
 `;
 

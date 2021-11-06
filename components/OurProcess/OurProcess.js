@@ -21,7 +21,7 @@ const OurProcess = () => {
             <div className="step" key={data.title}>
               <Bullet />
               <LineLink />
-              <Card title={data.title} body={data.body} />
+              <Card title={data.title} body={data.body} optional={data.optional} />
             </div>
           ))}
         </Steps>

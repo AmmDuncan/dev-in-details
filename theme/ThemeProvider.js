@@ -7,7 +7,7 @@ const globalTheme = {
       display: "64px",
       heading1: "56px",
       heading2: "48px",
-      heading3: "36px",
+      heading3: "32px",
       subheading: "22px",
       bodyL: "20px",
       bodyM: "18px",

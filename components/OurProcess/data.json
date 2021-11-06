@@ -5,11 +5,13 @@
   },
   {
     "title": "Strategy and Research",
-    "body": "If a client doesn’t have a strategy or a plan to achieve project goals, we help the client decide by performing industry and competitor research."
+    "body": "If a client doesn’t have a strategy or a plan to achieve project goals, we help the client decide by performing industry and competitor research.",
+    "optional": true
   },
   {
     "title": "Content Development",
-    "body":  "We use the findings from the strategy and research stage to develop a content plan and structure that will help clients achieve their goal."
+    "body":  "We use the findings from the strategy and research stage to develop a content plan and structure that will help clients achieve their goal.",
+    "optional": true
   },
   {
     "title": "Website Development",
