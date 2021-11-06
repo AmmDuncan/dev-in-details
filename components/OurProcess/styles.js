@@ -50,11 +50,12 @@ export const CardRoot = styled.article`
   width: 100%;
   max-width: 486px;
   color: ${grey(600)};
+  background: #fff;
 
   .bg {
     ${absolutePosition};
     width: 35px;
-    z-index: -1;
+    z-index: 1;
     background: ${primary("main")};
     opacity: 0.6;
     clip-path: polygon(0% 0%, 11% 0%, 100% 82%, 33% 100%, 0% 100%);
@@ -63,7 +64,7 @@ export const CardRoot = styled.article`
   &:before {
     ${absolutePosition};
     width: 35px;
-    z-index: -1;
+    z-index: 1;
     background: ${primary("main")};
     opacity: 0.6;
     clip-path: polygon(0% 0%, 11% 0%, 85% 92%, 33% 100%, 0% 100%);
@@ -72,7 +73,7 @@ export const CardRoot = styled.article`
   &:after {
     ${absolutePosition};
     width: 35px;
-    z-index: -1;
+    z-index: 1;
     background: ${primary("main")};
     opacity: 0.6;
     clip-path: polygon(0% 0%, 11% 0%, 61% 100%, 33% 100%, 0% 100%);
@@ -104,7 +105,7 @@ export const LineLink = styled.div`
   position: relative;
   border-top: 2px dashed ${primary(100)};
   width: 120%;
-  z-index: -1;
+  z-index: 0;
   //left: -16px;
 `;
 
@@ -114,6 +115,7 @@ export const Bullet = styled.div`
   height: 32px;
   background: ${primary(500)};
   border-radius: 50%;
+  z-index: 2;
   //left: -16px;
 
   &::after {
@@ -150,7 +152,7 @@ export const Steps = styled.div`
         top: 50%;
         left: 14px;
         //left: -2px;
-        z-index: -1;
+        z-index: 0;
       }
     }
 
@@ -164,7 +166,7 @@ export const Steps = styled.div`
         bottom: 50%;
         left: 14px;
         //left: -2px;
-        z-index: -1;
+        z-index: 0;
       }
     }
   }
