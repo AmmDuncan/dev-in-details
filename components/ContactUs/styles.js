@@ -88,7 +88,7 @@ export const ContactUsRoot = styled.section`
     display: grid;
     grid: repeat(4, auto) / 1fr;
     row-gap: 24px;
-    width: 90%;
+    width: 100%;
     max-width: 386px;
     margin: 44px auto 0;
 
@@ -99,16 +99,16 @@ export const ContactUsRoot = styled.section`
     }
 
     label {
-      padding-left: 8px;
+      padding-left: 12px;
     }
 
     input,
     textarea {
-      padding: 16px 8px;
+      padding: 16px 12px;
       border: none;
       box-shadow: 0 4px 8px rgba(30, 50, 150, 0.1);
       width: 100%;
-      margin-top: 4px;
+      margin-top: 8px;
       font-size: 100%;
     }
   }
