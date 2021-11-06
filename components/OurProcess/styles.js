@@ -3,7 +3,7 @@ import { fontSize, grey, media, primary } from "../../styles/utils";
 import { absolutePosition } from "../../styles/mixins";
 
 export const OurProcessRoot = styled.section`
-  padding: 4rem 0 9rem;
+  padding: 4rem 0 3rem;
 
   header {
     max-width: 486px;

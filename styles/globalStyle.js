@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { fontSize, grey } from "./utils";
+import { absolutePosition } from "./mixins";
 
 export default createGlobalStyle`
   html {
@@ -41,6 +42,13 @@ export default createGlobalStyle`
   }
   
   main {
-    background: #fefeff;
+    position: relative;
+    background: transparent;
+    
+    &:before {
+    ${absolutePosition};
+      background: #fefeff;
+      z-index: -10;
+    }
   }
 `;
