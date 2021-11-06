@@ -9,14 +9,14 @@ const OurClients = () => {
       <Container>
         <header>
           <h2>What our clients say about us</h2>
-          <p>We've worked with a growing list of clients and here is what they have to say about us.</p>
+          <p> We&apos;ve worked with a growing list of clients and here is what they have to say about us.</p>
         </header>
 
         <Testimonial>
           <div className="content">
             <p>
-              I love the first one already. Especially the part about what we've done before. It's as though you knew
-              what I wanted to say.
+              I love the first one already. Especially the part about what we&apos;ve done before. It&apos;s as though
+              you knew what I wanted to say.
             </p>
           </div>
           <div className="profile">
