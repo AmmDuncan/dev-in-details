@@ -53,6 +53,7 @@ const globalTheme = {
     tabM: 768,
     tabL: 880,
     deskS: 992,
+    desksM: 1040,
     deskM: 1366,
     deskL: 1560,
   },
