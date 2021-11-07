@@ -89,7 +89,7 @@ export const CardRoot = styled.article`
     letter-spacing: calc(1em * -0.04);
     color: #fff;
     line-height: 1.3;
-    font-family: "overpass", "Segoe UI", "helvetica", sans-serif;
+    font-family: "raleway", "Segoe UI", "helvetica", sans-serif;
 
     .bg {
       ${absolutePosition};

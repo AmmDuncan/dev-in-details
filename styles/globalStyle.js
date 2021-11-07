@@ -19,9 +19,9 @@ export default createGlobalStyle`
   }
   
   h1, h2, h3, h4 {
-    font-family: "Overpass", "Segoe UI", Helvetica, sans-serif;
+    font-family: "Raleway", "Segoe UI", Helvetica, sans-serif;
     line-height: 1;
-    letter-spacing: calc(1em * -0.04);
+    letter-spacing: calc(1em * -0.015);
   }
   
   h3 {

@@ -68,7 +68,7 @@ export const HeroContent = styled.section`
     max-width: 430px;
     font-size: calc(${fontSize("heading2")} + 8px);
     font-weight: 800;
-    letter-spacing: calc(1em * -0.06);
+    letter-spacing: calc(1em * -0.03);
 
     &:before {
       ${absolutePosition};
